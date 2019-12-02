@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <header>
+      <navigation />
+    </header>
     <div>
       <logo />
       <h1 class="title">
@@ -26,10 +29,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Navigation from '~/components/commons/navigation/Navigation'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Navigation
   }
 }
 </script>
