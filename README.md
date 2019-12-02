@@ -2,6 +2,8 @@
 
 > mawahe tattoo and illustrator artist
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/944acc09-dffb-4b92-9e56-376aa42e1dc5/deploy-status)](https://app.netlify.com/sites/mawahe/deploys)
+
 ## Build Setup
 
 ``` bash
