@@ -28,11 +28,11 @@ export default {
         },
         {
           name: 'Ilustraciones',
-          route: '/illistrations'
+          route: '/gallery/illustrations'
         },
         {
           name: 'Tatuajes',
-          route: '/tattoos'
+          route: '/gallery/tattoos'
         },
         {
           name: 'Sobre mi',

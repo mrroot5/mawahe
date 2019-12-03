@@ -4,6 +4,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      titleTemplate: `Inicio - %s`
+    }
+  }
+}
+</script>
+
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -15,6 +25,18 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.black {
+  color: #000;
+}
+
+.primary-color {
+  color: #00e8ff;
+}
+
+.secondary-color {
+  color: #f300ff;
 }
 
 *,
