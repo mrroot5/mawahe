@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+  <nuxt />
 </template>
 
 <script>
@@ -14,7 +12,24 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css">
+@import '~/assets/css/reset.css';
+
+/* Colors */
+.black {
+  color: #000;
+}
+
+.primary-color {
+  color: #00e8ff;
+}
+
+.secondary-color {
+  color: #f300ff;
+}
+/* /Colors */
+
+/* HTML Style */
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -27,25 +42,48 @@ html {
   box-sizing: border-box;
 }
 
-.black {
-  color: #000;
-}
-
-.primary-color {
-  color: #00e8ff;
-}
-
-.secondary-color {
-  color: #f300ff;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
 }
+/* /HTML Style */
 
+/* Grid */
+.container {
+  min-height: 100wv;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-columns: repeat(1, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  /* grid-auto-flow: column dense; */
+  grid-template-areas:
+    'navbar'
+    'main'
+    'footer';
+  grid-gap: 1rem 0; /* row column */
+  place-items: center stretch;
+  place-content: stretch stretch;
+}
+
+.navbar {
+  grid-area: 'navbar';
+}
+
+.main-content {
+  grid-area: 'main-content';
+  place-self: stretch center;
+  padding: 3em;
+}
+
+.footer {
+  grid-area: 'footer';
+  padding: 3em;
+}
+/* /Grid */
+
+/* Buttons */
 .button--green {
   display: inline-block;
   border-radius: 4px;
@@ -74,4 +112,5 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+/* /Buttons */
 </style>

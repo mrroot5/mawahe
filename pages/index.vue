@@ -1,16 +1,11 @@
 <template>
   <div class="container">
-    <header>
-      <navigation />
-    </header>
-    <div>
+    <navbar class="navigation" />
+    <div class="main-content">
       <logo />
-      <h1 class="title">
-        mawahe
-      </h1>
-      <h2 class="subtitle">
-        mawahe tattoo and illustrator artist
-      </h2>
+      <div class="footer"></div>
+      <h1 class="title">Titulo</h1>
+      <h2 class="subtitle">Subtitulo</h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
@@ -24,31 +19,25 @@
         </a>
       </div>
     </div>
+    <main-footer class="footer" />
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
-import Navigation from '~/components/commons/navigation/Navigation'
+import Navbar from '~/components/commons/Navbar'
+import MainFooter from '~/components/commons/MainFooter'
 
 export default {
   components: {
     Logo,
-    Navigation
+    Navbar,
+    MainFooter
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+<style lang="css" scoped>
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
