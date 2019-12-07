@@ -1,5 +1,6 @@
 <template>
-  <svg
+  <img src="/img/mawahe-avatar.jpg" alt="avatar" class="mawahe-avatar" />
+  <!-- <svg
     class="NuxtLogo"
     width="245"
     height="180"
@@ -21,10 +22,11 @@
         fill-rule="nonzero"
       />
     </g>
-  </svg>
+  </svg> -->
 </template>
 <style>
-.NuxtLogo {
+.mawahe-avatar {
+  border-radius: 50%;
   animation: 1s appear;
 }
 

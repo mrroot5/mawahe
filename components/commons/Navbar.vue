@@ -52,13 +52,21 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css" scoped>
+header {
+  display: grid;
+}
+
+nav {
+  display: grid;
+}
+
 .nav-list {
   display: flex;
-  /* align-items: stretch; */
-  /* justify-content: stretch */
-  /* flex-direction: row; */
-  /* flex-wrap: nowrap; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .nav-item {
@@ -71,6 +79,11 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; */
+}
+
+.nav-item > a {
+  color: #000;
+  text-decoration: none;
 }
 
 /* @media all and (max-width: 600px) {

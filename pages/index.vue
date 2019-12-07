@@ -1,21 +1,20 @@
 <template>
   <div class="container">
-    <navbar class="navigation" />
+    <navbar class="navbar" />
     <div class="main-content">
       <logo />
-      <div class="footer"></div>
-      <h1 class="title">Titulo</h1>
-      <h2 class="subtitle">Subtitulo</h2>
+      <h1 class="title">Mawahe</h1>
+      <h2 class="subtitle">Illustrator and Tattoo artist</h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
+          Instagram
         </a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey"
         >
-          GitHub
+          DeviantArt
         </a>
       </div>
     </div>

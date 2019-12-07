@@ -52,34 +52,51 @@ html {
 
 /* Grid */
 .container {
-  min-height: 100wv;
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
   min-height: 100vh;
   display: grid;
   grid-auto-columns: repeat(1, 1fr);
-  grid-auto-rows: repeat(3, 1fr);
+  grid-auto-rows: repeat(10, 1fr);
   /* grid-auto-flow: column dense; */
-  grid-template-areas:
+  /* grid-template-areas:
     'navbar'
     'main'
-    'footer';
+    'main'
+    'main'
+    'footer'; */
   grid-gap: 1rem 0; /* row column */
   place-items: center stretch;
   place-content: stretch stretch;
 }
 
 .navbar {
+  height: 100%;
   grid-area: 'navbar';
+  grid-row: 1 / 2;
 }
 
 .main-content {
+  height: 100%;
   grid-area: 'main-content';
-  place-self: stretch center;
-  padding: 3em;
+  /* place-self: center stretch; */
+  /* place-content: center stretch; */
+  /* align-self: center; */
+  /* justify-self: center; */
+  /* text-align: center; */
+  grid-row: 2 / 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer {
+  height: 100%;
   grid-area: 'footer';
-  padding: 3em;
+  /* padding: 3em; */
+  grid-row: 8 / 10;
 }
 /* /Grid */
 
