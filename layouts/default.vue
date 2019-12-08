@@ -57,15 +57,9 @@ html {
   height: 100vh;
   min-height: 100vh;
   display: grid;
-  grid-auto-columns: repeat(1, 1fr);
-  grid-auto-rows: repeat(10, 1fr);
-  /* grid-auto-flow: column dense; */
-  /* grid-template-areas:
-    'navbar'
-    'main'
-    'main'
-    'main'
-    'footer'; */
+  grid-auto-columns: minmax(100px, 1fr);
+  grid-auto-rows: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)
+    minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
   grid-gap: 1rem 0; /* row column */
   place-items: center stretch;
   place-content: stretch stretch;
@@ -80,23 +74,13 @@ html {
 .main-content {
   height: 100%;
   grid-area: 'main-content';
-  /* place-self: center stretch; */
-  /* place-content: center stretch; */
-  /* align-self: center; */
-  /* justify-self: center; */
-  /* text-align: center; */
-  grid-row: 2 / 8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  grid-row: 2 / 6;
 }
 
 .footer {
   height: 100%;
   grid-area: 'footer';
-  /* padding: 3em; */
-  grid-row: 8 / 10;
+  grid-row: 6 / 7;
 }
 /* /Grid */
 
