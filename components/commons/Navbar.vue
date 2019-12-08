@@ -32,18 +32,22 @@ export default {
         },
         {
           name: 'Ilustraciones',
+          // name: 'I',
           route: '/gallery/illustrations'
         },
         {
           name: 'Tatuajes',
+          // name: 'T',
           route: '/gallery/tattoos'
         },
         {
           name: 'Sobre mi',
+          // name: 'S',
           route: '/about'
         },
         {
           name: 'Contacto',
+          // name: 'C',
           route: '/contact'
         }
       ]

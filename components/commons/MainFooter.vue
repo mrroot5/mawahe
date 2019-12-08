@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <h3>FOOTER</h3>
+    <h3>&copy; Copyright All rights reserver</h3>
   </footer>
 </template>
 
