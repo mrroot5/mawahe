@@ -2,7 +2,7 @@
   <div class="container">
     <navbar class="navbar" />
     <div class="main-content">
-      <gallery :gallery-data="gallery" />
+      <gallery :gallery-data="gallery" :overlay-class="overlayCss" />
     </div>
     <main-footer class="footer" />
   </div>
@@ -15,65 +15,65 @@ import Gallery from '~/components/views/Gallery'
 
 export default {
   components: {
-    // Logo,
     Navbar,
     MainFooter,
     Gallery
   },
   head() {
     return {
-      titleTemplate: `illustrations - %s`
+      titleTemplate: `Illustrations - %s`
     }
   },
   data() {
     return {
+      overlayCss: 'primary-color-bg',
       gallery: [
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         },
         {
-          url: 'http://placekitten.com/200/200',
+          url: '/img/painting/painting-square-300.jpg',
           alt: 'Sample image'
         }
       ]
@@ -81,13 +81,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css" scoped>
-/* Grid */
-/* .main-content {
-  display: grid;
-  place-items: stretch stretch;
-  place-content: stretch stretch;
-} */
-/* /Grid */
-</style>
