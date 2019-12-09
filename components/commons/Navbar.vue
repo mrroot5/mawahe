@@ -69,20 +69,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
+  height: 100vh;
+  margin-top: 3rem;
 }
 
 .nav-item {
   text-align: center;
-  /* flex: 0 0 auto; */
-  /* flex: 1; */
   flex: 1 1 auto;
-  /* border: solid 2px black;
-  background-image: url('/img/tattoo-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
 }
 
 .nav-item > a {
@@ -90,13 +85,11 @@ nav {
   text-decoration: none;
 }
 
-/* @media all and (max-width: 600px) {
+@media (min-width: 720px) {
   .nav-list {
-    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: initial;
+    height: initial;
   }
-
-  .nav-item {
-    flex-basis: 50%;
-  }
-} */
+}
 </style>

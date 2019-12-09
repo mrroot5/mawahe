@@ -27,6 +27,14 @@ export default {
 .secondary-color {
   color: #f300ff;
 }
+
+.primary-color-bg {
+  background-color: #d4e8f6;
+}
+
+.secondary-color-bg {
+  background-color: #fee4c2;
+}
 /* /Colors */
 
 /* HTML Style */
@@ -54,12 +62,13 @@ html {
 .container {
   width: 100vw;
   min-width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 100vh;
   display: grid;
   grid-auto-columns: minmax(100px, 1fr);
   grid-auto-rows: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)
-    minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+    minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)
+    minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
   grid-gap: 1rem 0; /* row column */
   place-items: center stretch;
   place-content: stretch stretch;
@@ -74,17 +83,22 @@ html {
 .main-content {
   height: 100%;
   grid-area: 'main-content';
-  grid-row: 2 / 6;
+  grid-row: 2 / 9;
 }
 
 .footer {
   height: 100%;
   grid-area: 'footer';
-  grid-row: 6 / 7;
+  grid-row: 9 / 10;
 }
 /* /Grid */
 
 /* Buttons */
+.btn {
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
 .button--green {
   display: inline-block;
   border-radius: 4px;
