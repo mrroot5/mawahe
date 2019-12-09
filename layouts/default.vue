@@ -62,7 +62,6 @@ html {
 .container {
   width: 100vw;
   min-width: 100vw;
-  /* height: 100vh; */
   min-height: 100vh;
   display: grid;
   grid-auto-columns: minmax(100px, 1fr);
