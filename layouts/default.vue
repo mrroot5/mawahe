@@ -60,9 +60,8 @@ html {
 
 /* Grid */
 .container {
-  width: 100vw;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   display: grid;
   grid-auto-columns: minmax(100px, 1fr);
   grid-auto-rows: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)
