@@ -48,7 +48,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/vuetify'
   ],
   /*
    ** Axios module configuration
@@ -64,4 +65,7 @@ export default {
      */
     extend(config, ctx) {}
   }
+  /* vuetify: {
+    optionsPath: './vuetify.options.js'
+  } */
 }
