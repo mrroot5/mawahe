@@ -18,39 +18,13 @@
             </v-btn>
           </v-card-actions>
         </v-card>
-        <!-- <gallery :gallery-data="gallery" :overlay-class="overlayCss" /> -->
       </v-col>
     </v-row>
-    <!-- <div class="main-content">
-      <logo />
-      <h1 class="title">Mawahe</h1>
-      <h2 class="subtitle">Illustrator and Tattoo artist</h2>
-      <h4 class="subtitle">Under construction / En construcción</h4>
-      <div class="links">
-        <a
-          href="https://www.instagram.com/mawahe/"
-          target="_blank"
-          class="button--green"
-        >
-          Instagram
-        </a>
-      </div>
-      <main-footer class="footer" />
-    </div> -->
   </v-container>
 </template>
 
 <script>
-// import Gallery from '~/components/views/Gallery'
-// import Logo from '~/components/Logo.vue'
-// import MainFooter from '~/components/commons/MainFooter'
-
 export default {
-  components: {
-    // Gallery
-    //   Logo,
-    //   MainFooter
-  },
   data() {
     return {
       cards: [
@@ -90,14 +64,4 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-.overlay {
-  display: none;
-  bottom: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: absolute;
-}
-</style>
+<style lang="css" scoped></style>
